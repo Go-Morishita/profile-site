@@ -3,7 +3,9 @@ Transform: AWS::Serverless-2016-10-31
 Description: AWS SAM Template for Frontend CI/CD Pipeline
 
 Parameters:
-  RepositoryName:
+  GitHubConnectionArn:
+    Type: String
+  GitHubFullRepositoryId:
     Type: String
   ClientBucketName:
     Type: String
@@ -26,10 +28,11 @@ Resources:
               ActionTypeId:
                 Category: Source
                 Owner: AWS
-                Provider: CodeCommit
+                Provider: CodeStarSourceConnection
                 Version: '1'
               Configuration:
-                RepositoryName: !Ref RepositoryName
+                ConnectionArn: !Ref GitHubConnectionArn
+                FullRepositoryId: !Ref GitHubFullRepositoryId
                 BranchName: main
               OutputArtifacts:
                 - Name: SourceOutput
@@ -64,8 +67,9 @@ Resources:
               - Effect: Allow
                 Action:
                   - s3:*
-                  - codecommit:*
                   - codebuild:*
+                  - codestar-connections:*
+                  - iam:PassRole
                 Resource: '*'
 
   CodeBuild:

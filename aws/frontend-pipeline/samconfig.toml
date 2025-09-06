@@ -8,7 +8,8 @@ region = "ap-northeast-1"
 s3_prefix = "profile-site-pipeline"
 capabilities = ["CAPABILITY_IAM", "CAPABILITY_NAMED_IAM"]
 parameter_overrides = [
-    "RepositoryName=profile-site-rep",
+    "GitHubConnectionArn=arn:aws:codeconnections:ap-northeast-1:890742577378:connection/4c35f597-4ec2-45bc-9d78-2e9fca63779e",
+    "GitHubFullRepositoryId=Go-Morishita/profile-site",
     "ClientBucketName=profile-site-s3-bucket",
     "CloudFrontDistributionId=EFA0SQL6XPC8J"
     ]
