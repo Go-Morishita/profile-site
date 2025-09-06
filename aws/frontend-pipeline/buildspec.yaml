@@ -5,7 +5,7 @@ phases:
     runtime-versions:
       nodejs: 18
     commands:
-      - cd frontend
+      - cd nextjs
       - npm install
   build:
     commands:
