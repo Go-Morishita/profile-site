@@ -1,0 +1,12 @@
+version = 0.1
+
+[default.deploy]
+[default.deploy.parameters]
+template_file = "template.yaml"
+stack_name = "profile-site"
+region = "ap-northeast-1"
+s3_prefix = "profile-site"
+capabilities = ["CAPABILITY_IAM", "CAPABILITY_NAMED_IAM"]
+parameter_overrides = []
+fail_on_empty_changeset = false
+resolve_s3 = true
