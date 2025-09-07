@@ -7,6 +7,10 @@ stack_name = "profile-site"
 region = "ap-northeast-1"
 s3_prefix = "profile-site"
 capabilities = ["CAPABILITY_IAM", "CAPABILITY_NAMED_IAM"]
-parameter_overrides = []
+parameter_overrides = [
+    "DomainName=gomorishita.com",
+    "HostedZoneId=Z049227635F0NK62EPFCW",
+    "CertificateArn='arn:aws:acm:us-east-1:890742577378:certificate/cd0eac4e-7fd1-493c-aa1f-7489fab6fb71'"
+]
 fail_on_empty_changeset = false
 resolve_s3 = true
