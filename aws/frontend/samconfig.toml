@@ -10,7 +10,7 @@ capabilities = ["CAPABILITY_IAM", "CAPABILITY_NAMED_IAM"]
 parameter_overrides = [
     "DomainName=gomorishita.com",
     "HostedZoneId=Z049227635F0NK62EPFCW",
-    "CertificateArn='arn:aws:acm:us-east-1:890742577378:certificate/cd0eac4e-7fd1-493c-aa1f-7489fab6fb71'"
+    "CertificateArn='arn:aws:acm:us-east-1:890742577378:certificate/779a2c15-f93d-4996-8bdc-5f4aa803cf63'"
 ]
 fail_on_empty_changeset = false
 resolve_s3 = true
