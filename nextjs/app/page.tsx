@@ -146,7 +146,7 @@ export default async function Home() {
             </div>
             <div className="space-y-3">
               <h1 className="text-4xl font-semibold leading-tight tracking-tight md:text-5xl">
-                Hello!! こんにちは!<br />I'm Go Morishita.
+                Hello!! こんにちは!<br />I&apos;m Go Morishita.
               </h1>
               <p className="max-w-2xl text-lg text-neutral-300 italic">
                 “恩は石に刻め, 恨みは水に流せ”

@@ -75,7 +75,8 @@ export default async function BlogPostPage({
 }: {
   params: { id: string };
 }) {
-  const post = await getBlogPost(params.id);
+  const { id } = await params;
+  const post = await getBlogPost(id);
   if (!post) notFound();
 
   return (
