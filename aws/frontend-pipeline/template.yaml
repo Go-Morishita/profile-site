@@ -11,6 +11,10 @@ Parameters:
     Type: String
   CloudFrontDistributionId:
     Type: String
+  MicroCMSServiceDomain:
+    Type: String
+  MicroCMSApiKey:
+    Type: String
 
 Resources:
   GitHubConnection:
@@ -94,6 +98,10 @@ Resources:
             Value: !Ref ClientBucketName
           - Name: ClientDistributionId
             Value: !Ref CloudFrontDistributionId
+          - Name: MicroCMSServiceDomain
+            Value: !Ref MicroCMSServiceDomain
+          - Name: MicroCMSApiKey
+            Value: !Ref MicroCMSApiKey
       Source:
         Type: CODEPIPELINE
         BuildSpec: aws/frontend-pipeline/buildspec.yaml

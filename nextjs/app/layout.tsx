@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Go Morishita | Portfolio",
+  title: "Go Morishita",
   description:
     "Frontend engineer crafting calm, fast web experiences with Next.js and TypeScript.",
 };

@@ -11,7 +11,9 @@ parameter_overrides = [
     "GitHubConnectionName=gh-profile-site",
     "GitHubFullRepositoryId=Go-Morishita/profile-site",
     "ClientBucketName=profile-site-s3-bucket",
-    "CloudFrontDistributionId=EDI731TZGURZO"
+    "CloudFrontDistributionId=EDI731TZGURZO",
+    "MicroCMSServiceDomain=gomorishita-blog",
+    "MicroCMSApiKey=nXeGjxQ2fXQenCayVYxH10n7PG6ipEoojfqK",
     ]
 fail_on_empty_changeset = false
 resolve_s3 = true

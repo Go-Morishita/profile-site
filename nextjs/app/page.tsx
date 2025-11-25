@@ -1,3 +1,6 @@
+import Image from "next/image";
+import Link from "next/link";
+
 type BlogPost = {
   id: string;
   title: string;
@@ -16,7 +19,6 @@ async function getBlogPosts(): Promise<BlogPost[] | null> {
   if (!serviceDomain || !apiKey) return null;
 
   const url = `https://${serviceDomain}.microcms.io/api/v1/${endpoint}?limit=5`;
-
   try {
     const res = await fetch(url, {
       headers: { "X-MICROCMS-API-KEY": apiKey },
@@ -174,10 +176,13 @@ export default async function Home() {
           <div className="flex justify-center">
             <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-neutral-900/60 p-2">
               <div className="aspect-[4/5] overflow-hidden rounded-xl bg-neutral-800">
-                <img
+                <Image
                   src="/profile.jpg"
                   alt="Go Morishita portrait"
+                  width={800}
+                  height={1000}
                   className="h-full w-full object-cover"
+                  priority
                 />
               </div>
             </div>
@@ -387,4 +392,3 @@ export default async function Home() {
     </main>
   );
 }
-import Link from "next/link";

@@ -68,6 +68,8 @@ export async function generateStaticParams() {
   return ids.map((id) => ({ id }));
 }
 
+export const dynamicParams = false;
+
 export default async function BlogPostPage({
   params,
 }: {
