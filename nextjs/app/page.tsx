@@ -146,13 +146,13 @@ export default async function Home() {
             </div>
             <div className="space-y-3">
               <h1 className="text-4xl font-semibold leading-tight tracking-tight md:text-5xl">
-                Go Morishita
+                Hello!! こんにちは!<br />I'm Go Morishita.
               </h1>
               <p className="max-w-2xl text-lg text-neutral-300 italic">
                 “恩は石に刻め, 恨みは水に流せ”
               </p>
               <p className="max-w-2xl text-lg text-neutral-300">
-                Frontend engineer in Tokyo. I build calm, fast interfaces with Next.js/TypeScript and deepen Docker/Kubernetes through internships.
+                I believe that any modern system should be operated on the cloud—whether it’s AWS, Azure, or GCP—and I aim to enrich the world by empowering people and organizations through cloud technology.
               </p>
             </div>
             <div className="flex flex-wrap gap-3">
@@ -194,7 +194,7 @@ export default async function Home() {
             About
           </p>
           <p className="text-neutral-200">
-            I turn product intent into clean, dependable UI with a small surface area and measurable speed.
+            Driven by my passion for creating value through technology, I have built full-stack experience across frontend development, backend systems, infrastructure, and cloud-native architectures. Alongside this engineering work, I am conducting computer graphics research at Aoyama Gakuin University, aiming to publish at SIGGRAPH with a focus on particle distributions, rendering methods, and numerical optimization. I am also deeply interested in machine learning and cloud computing, and I enjoy integrating these domains to design practical, scalable systems. Ultimately, I hope to enrich the world through cloud technology by empowering people and organizations to build and operate better systems with greater efficiency and impact.
           </p>
         </section>
 
@@ -206,19 +206,19 @@ export default async function Home() {
             <h2 className="text-2xl font-semibold text-neutral-50">Experience</h2>
           </div>
           <div className="relative space-y-6">
-            <div className="absolute left-4 top-2 bottom-2 w-px bg-white/10" />
+            <div className="pointer-events-none absolute left-3 top-4 bottom-4 w-px bg-white/10 md:left-4" />
             {timeline.map((item) => (
               <div
                 key={item.title}
                 className="relative grid gap-2 rounded-xl border border-white/5 bg-neutral-900/70 p-4 md:grid-cols-[150px_1fr] md:items-start"
               >
-                <div className="flex items-center gap-2 text-sm text-neutral-400">
-                  <span className="relative flex h-3 w-3 items-center justify-center rounded-full bg-cyan-400/80">
+                <div className="flex items-center gap-2 text-sm text-neutral-400 md:justify-start">
+                  <span className="relative flex h-3 w-3 items-center justify-center rounded-full bg-cyan-400/80 ring-4 ring-neutral-900/70 md:ml-[-6px]">
                     <span className="h-1.5 w-1.5 rounded-full bg-neutral-950" />
                   </span>
-                  {item.period}
+                  <span className="pl-1">{item.period}</span>
                 </div>
-                <div>
+                <div className="md:pl-2">
                   <p className="text-base font-semibold text-neutral-50">
                     {item.title}
                   </p>
