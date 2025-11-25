@@ -356,11 +356,11 @@ export default async function Home() {
           </div>
           <div className="grid gap-3 md:grid-cols-2">
             {[
+              { label: "LinkedIn", href: "https://www.linkedin.com/in/gomorishita", handle: "go-morishita" },
+              { label: "GitHub", href: "https://github.com/Go-Morishita", handle: "Go-Morishita" },
+              { label: "Zenn", href: "https://zenn.dev/go_morishita", handle: "go_morishita" },
               { label: "Resume (PDF)", href: "/Go-Morishita_Resume.pdf", handle: "download" },
               { label: "CV (Notion)", href: "https://www.notion.so/your-cv-link", handle: "view" },
-              { label: "GitHub", href: "https://github.com/Go-Morishita", handle: "@gomorishita" },
-              { label: "LinkedIn", href: "https://www.linkedin.com/in/gomorishita", handle: "/in/gomorishita" },
-              { label: "X (Twitter)", href: "https://x.com/gomorishita", handle: "@gomorishita" },
             ].map((link) => (
               <a
                 key={link.label}
