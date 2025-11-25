@@ -1,0 +1,7 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 2">
+  <!-- 白地 -->
+  <rect width="3" height="2" fill="#ffffff"></rect>
+  <!-- 日の丸（中心：旗の中央、半径：縦の3/5） -->
+  <circle cx="1.5" cy="1" r="0.6" fill="#BC002D"></circle>
+</svg>
