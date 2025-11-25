@@ -75,14 +75,14 @@ export default async function Home() {
 
   const education = [
     {
-      period: "Apr 2025 – Mar 2028",
+      period: "Apr 2026 – Mar 2028",
       title: "Master of Technology, Computer Science — Aoyama Gakuin University",
       detail: "CG Lab (Aoyama Graphics Group). Focus on optimization and realistic rendering.",
     },
     {
       period: "Apr 2022 – Mar 2026",
       title: "Bachelor of Technology, Computer Science — Aoyama Gakuin University",
-      detail: "GPA 3.6/4.0. Swim Team (AGUST), CG Lab.",
+      detail: "GPA 3.6/4.0. Swim Team (AGUST), CG Lab(Aoyama Graphics Group).",
     },
   ];
 
@@ -129,8 +129,6 @@ export default async function Home() {
           </div>
           <a
             href="mailto:go.morishita.dev@gmail.com"
-            target="_blank"
-            rel="noreferrer"
             className="inline-flex items-center gap-2 rounded-full border border-cyan-300/40 px-4 py-2 text-sm font-medium text-cyan-200 transition hover:-translate-y-0.5 hover:border-cyan-200"
           >
             Email
@@ -157,12 +155,10 @@ export default async function Home() {
             </div>
             <div className="flex flex-wrap gap-3">
               <a
-                href="mailto:go.morishita.dev@gmail.com"
-                target="_blank"
-                rel="noreferrer"
+                href="#blog"
                 className="inline-flex items-center justify-center gap-2 rounded-full bg-cyan-400 px-5 py-3 text-sm font-semibold text-neutral-900 transition hover:-translate-y-0.5"
               >
-                Email me
+                Blog
                 <span aria-hidden>→</span>
               </a>
               <a
