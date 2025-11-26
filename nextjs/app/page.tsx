@@ -154,9 +154,9 @@ export default async function Home() {
     },
   ];
   const cloudLogos = [
-    { label: "AWS", src: "/aws.svg", bg: "bg-white/80" },
-    { label: "GCP", src: "/google-cloud.svg", bg: "bg-white/80" },
-    { label: "Azure", src: "/microsoft-azure.svg", bg: "bg-white/80" },
+    { label: "AWS", src: "/aws.svg", bg: "bg-white/90" },
+    { label: "GCP", src: "/google-cloud.svg", bg: "bg-white/90" },
+    { label: "Azure", src: "/microsoft-azure.svg", bg: "bg-white/90" },
   ];
 
   const links = [
