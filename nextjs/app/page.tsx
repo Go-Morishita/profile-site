@@ -215,7 +215,7 @@ export default async function Home() {
                 “恩は石に刻め, 恨みは水に流せ”
               </p>
               <p className="max-w-2xl text-lg text-neutral-300">
-                I believe that any modern system should be operated on the cloud—whether it’s AWS, Azure, or GCP—and I aim to enrich the world by empowering people and organizations through cloud technology.
+                I believe the cloud is a form of “technological democratization” that empowers anyone to take on new challenges.<br />With low costs, easy scalability, and fast development, the cloud accelerates ideas and enables more people to experiment and grow freely.
               </p>
             </div>
             <div className="flex items-center gap-3">
@@ -246,7 +246,7 @@ export default async function Home() {
                 href="#timeline"
                 className="inline-flex items-center justify-center gap-2 rounded-full border border-white/10 px-4 py-3 text-sm font-semibold text-neutral-100 transition hover:-translate-y-0.5"
               >
-                View timeline
+                View Experience
               </a>
             </div>
           </FadeIn>
