@@ -1,12 +1,12 @@
 "use client";
 
-import type { HTMLAttributes, ReactNode } from "react";
-import { motion } from "framer-motion";
+import type { ReactNode } from "react";
+import { motion, type HTMLMotionProps } from "framer-motion";
 
 type FadeInProps = {
   children: ReactNode;
   delay?: number;
-} & HTMLAttributes<HTMLDivElement>;
+} & Omit<HTMLMotionProps<"div">, "children">;
 
 export function FadeIn({ children, delay = 0, className, ...rest }: FadeInProps) {
   return (
